@@ -12,7 +12,7 @@ const Pagination = ({ page, onPageChange }: Props) => {
         <ul className="pagination">
           <li className={`page-item ${page.first ? "disabled" : ""}`}>
             <button
-              className="btn btn-primary"
+              className="page-link"
               onClick={() => onPageChange(page.number - 1)}
             >
               Anterior
@@ -23,7 +23,7 @@ const Pagination = ({ page, onPageChange }: Props) => {
           </li>
           <li className={`page-item ${page.last ? "disabled" : ""}`}>
             <button
-              className=" btn btn-primary"
+              className="page-link"
               onClick={() => onPageChange(page.number + 1)}
             >
               Próxima
